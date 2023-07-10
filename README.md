@@ -1,7 +1,7 @@
 <h1 align="center">Facebook Messenger for Homey</h1>
 <p align="center">
   <a href="https://homey.app/nl-nl/apps/author/5d4da77a2c836a50f6936070/page/0/">
-    <img src="https://quiq.com/wp-content/uploads/2021/11/How-Facebook-Messenger-for-business-works-Social-1.jpg" />
+    <img src="https://static.vecteezy.com/system/resources/previews/015/593/798/non_2x/kharkov-ukraine-march-5-2021-facebook-messenger-icon-and-application-from-app-store-on-iphone-12-pro-display-screen-on-white-table-free-photo.JPG" />
   </a>
 </p>
 
