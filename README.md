@@ -1,42 +1,67 @@
-# CallMeBot
+<h1 align="center">Facebook Messenger for Homey</h1>
+<p align="center">
+  <a href="https://homey.app/nl-nl/apps/author/5d4da77a2c836a50f6936070/page/0/">
+    <img src="https://quiq.com/wp-content/uploads/2021/11/How-Facebook-Messenger-for-business-works-Social-1.jpg" />
+  </a>
+</p>
 
-Have Homey send messages to your own preferred messenger service. You can add multiple services and numbers for everyone in your family. It supports Whatsapp, Signal, Telegram and Facebook messenger.
-You need to get a personal APIkey before using the API. Keep this key secret so only you can send messages to yourself!
+<p align="center">Created by <a href="https://homey.app/nl-nl/apps/author/">Léon van der Linden</a></p> 
+  
 
-## WhatsApp
-1) Add the phone number +34 644 51 95 23 into your Phone Contacts. Name it "Homey CallMeBot WhatsApp".
-2) Send this message "I allow callmebot to send me messages" to the new Contact created (using your WhatsApp of course)
-3) The bot will answer you with your personal apikey.
+## General
+Have Homey send messages to your own preferred messenger service. You can add multiple services and numbers for everyone in your family. 
+You need to get a personal APIkey from callmebot.com before using the API. Keep this key secret so only you can send messages to yourself!
 
-Add the WhatsApp device in Homey and fill in your phone number and apikey. You can now start sending messages from a flow.
 
-## Signal
-1) Add the phone number +34 603 21 25 97 into your Phone Contacts. Name it "Homey CallMeBot Signal".
-2) Send this message "I allow callmebot to send me messages" to the new Contact created (using your Signal Messaging of course)
-3) The bot will answer you with your personal apikey.
+---
 
-Add the Signal device in Homey and fill in your phone number and apikey. You can now start sending messages from a flow.
+## Prerequisite ⚙
+- Creat a [Facebook apiKey]([https://textmebot.com/#lepopup-NewApiKey](https://www.callmebot.com/blog/free-api-signal-send-messages/))
+   - Add the phone number +34 644 10 55 84 into your Phone Contacts. (Name it Signal Homey Bot)
+   - Send this message "I allow callmebot to send me messages" to the new Contact created (using Signal Messaging of course)
+   - The bot will answer you with your personal apikey.
+- When you have the apiKey from CallMeBot, go directley into Homey
 
-## Facebook messenger
-1) Start a Facebook Messenger conversation with @api.callmebot. Or click here: https://m.me/api.callmebot
-2) Send this message "create apikey" to @api.callmebot (using your Facebook Messenger of course)
-3) The bot will answer you with your personal apikey.
+---
 
-Add the Facebook device in Homey and fill in your user name and apikey. You can now start sending messages from a flow.
+## Usage ⚙
+- Install this app on your Homey
+- Go to add devices
+- Provide your mobile number and apiKey (from CallMeBot). Click Next
 
-## Telegram
-1) Use your Telegram to send /start to @CallMeBot_txtbot. Or click here: https://api2.callmebot.com/txt/login.php
+---
 
-Add the Telegram device in Homey and fill in your user name (e.g. @myusername or +331234567890). No apikey is needed. You can now start sending messages from a flow.
 
-## Send Voice Messages
-With Telegram you can start a voice call from a flow. The text will be converted to speech in a selection of languages. You can choose between a male and a female voice. As one time setup you need to allow @CallMeBot_API4 to send you messages.
+## Current features: 🔧
+- [x] Send Text Messages
+- [x] Send Images
+- [x] Send group Messages
+- [x] Of course, you can put all available Homey tags in the text field and send snapshots/artworks via the dedicated image tag card. :tada:
 
-## Send Images
-With Signal and FB messenger you can send images via a flow.
+---
+  
+## Contributors: 🔧
+- <a href="https://callmebot.com">CallMeBot</a> (creator of the apiKey)
+- <a href="https://github.com/gruijter">Robin de Gruijter</a> 
 
-### Data privacy and terms of use
-https://www.callmebot.com/terms-of-service/
+---
 
-### Donate
-https://www.paypal.com/paypalme/gruijter
+## Supported Languages
+-  English
+-  Dutch
+
+---
+
+## Result
+![2193fc63-f346-4a01-8ca8-d271f604d1c6](https://github.com/LRvdLinden/nl.lrvdlinden.signal/assets/77990847/cac20c68-cac9-4977-ab72-c3e4fc4ad74d)
+
+---
+
+## Contributions
+
+If you appreciate this app, contribute to future development by making a [paypal contribution ](https://www.paypal.me/lrvdlinden)
+or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdlinden_homey#checkoutModal) or [Bunq.me ](https://bunq.me/lrvdlinden)
+
+[![image|150x84](upload://5Rtagdo7TObzh9u8haIuXaXBJbc) ](https://paypal.me/lrvdlinden) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg) ](https://ko-fi.com/lrvdlinden_homey#checkoutModal)[![image|172x90](upload://iSgqkM7Zaw5s5hwVVnAqXNDQLG9) ](https://bunq.me/lrvdlinden)
+
+---
