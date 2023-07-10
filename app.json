@@ -5,9 +5,9 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
-    "en": "CallMeBot"
+    "en": "Facebook Messenger"
   },
-  "brandColor": "#f0a846",
+  "brandColor": "#3b5998",
   "description": {
     "en": "Send messages to your Facebook messenger"
   },
