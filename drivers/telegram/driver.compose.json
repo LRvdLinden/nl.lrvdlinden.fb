@@ -1,6 +1,0 @@
-{
-  "name": {
-    "en": "Telegram"
-  },
-  "$extends": ["driver_defaults"]
-}
