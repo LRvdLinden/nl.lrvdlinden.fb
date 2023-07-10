@@ -1,6 +1,0 @@
-{
-  "name": {
-    "en": "Signal"
-  },
-  "$extends": ["driver_defaults"]
-}
