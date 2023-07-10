@@ -1,6 +1,0 @@
-{
-  "name": {
-    "en": "WhatsApp"
-  },
-  "$extends": ["driver_defaults"]
-}
