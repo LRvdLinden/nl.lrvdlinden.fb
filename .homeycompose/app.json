@@ -1,14 +1,14 @@
 {
-  "id": "com.gruijter.callmebot",
-  "version": "1.5.1",
+  "id": "nl.lrvdlinden.fb",
+  "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
-    "en": "CallMeBot"
+    "en": "Facebook Messenger"
   },
   "brandColor": "#f0a846",
   "description": {
-    "en": "Send messages to your Whatsapp, Signal, Telegram and Facebook messenger"
+    "en": "Send messages to your Facebook messenger"
   },
   "tags": {
     "en": [
@@ -31,10 +31,10 @@
     "large": "/assets/images/large.jpg"
   },
   "author": {
-    "name": "Robin de Gruijter",
-    "email": "gruijter@hotmail.com"
+    "name": "Léon van der Linden",
+    "email": "homey@vdlinden.xyz"
   },
-  "copyright": "Robin de Gruijter (gruijter@hotmail.com)",
+  "copyright": "Léon van der Linde (homey@vdlinden.xyz)",
   "license": " GPL-3.0-or-later",
   "contributors": {
     "developers": [
@@ -45,17 +45,17 @@
     ],
     "translators": [
       {
-        "name": "🇬🇧 Robin"
+        "name": "🇬🇧 Léon"
       },
       {
-        "name": "🇳🇱 Robin"
+        "name": "🇳🇱 Léon"
       }
     ]
   },
   "contributing": {
     "donate": {
       "paypal": {
-        "username": "gruijter"
+        "username": "lrvdlinden"
       }
     }
   },
