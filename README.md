@@ -103,6 +103,7 @@ or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdli
 
 * [Lifeliner](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742)
 * [P2000](https://community.homey.app/t/app-pro-p2000-for-homey-dutch-112-911-alerts/83738)
-* [Signal Messenger ](https://community.homey.app/t/app-pro-signal-messenger/83624/1)
+* [Signal Messenger ](https://community.homey.app/t/app-pro-signal-messenger/83624)
+* [Facebook Messenger ](https://community.homey.app/t/app-pro-facebook-messenger/84702)
 
 ---
