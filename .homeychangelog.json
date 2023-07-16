@@ -2,8 +2,10 @@
   "0.0.1": {
     "en": "First release"
   },
-  {
   "1.0.0": {
     "en": "NEW: app release"
+  },
+  "1.0.1": {
+    "en": "Update readme"
   }
 }
