@@ -63,11 +63,11 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/app-pro-signal-messenger/83624"
+    "url": "https://community.homey.app/t/app-pro-facebook-messenger/84702"
   },
   "homepage": "https://shor.by/LRvdLinden",
-  "support": "https://community.homey.app/t/app-pro-signal-messenger/83624",
-  "homeyCommunityTopicId": 83624,
+  "support": "https://community.homey.app/t/app-pro-facebook-messenger/84702",
+  "homeyCommunityTopicId": 84702,
   "api": {
     "getLogs": {
       "method": "GET",
@@ -77,6 +77,517 @@
       "method": "GET",
       "path": "/deletelogs"
     }
+  },
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Send a message"
+        },
+        "titleFormatted": {
+          "en": "Send message [[msg]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=signal|whatsapp|fb|telegram"
+          },
+          {
+            "name": "msg",
+            "type": "text",
+            "placeholder": {
+              "en": "Text"
+            }
+          }
+        ],
+        "id": "send"
+      },
+      {
+        "title": {
+          "en": "Send a group message"
+        },
+        "titleFormatted": {
+          "en": "Send group message [[msg]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=telegram"
+          },
+          {
+            "name": "msg",
+            "type": "text",
+            "placeholder": {
+              "en": "Text"
+            }
+          }
+        ],
+        "id": "send_group"
+      },
+      {
+        "title": {
+          "en": "Send image"
+        },
+        "droptoken": "image",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=signal|fb"
+          }
+        ],
+        "id": "send_image"
+      },
+      {
+        "title": {
+          "en": "Send voice message"
+        },
+        "titleFormatted": {
+          "en": "Send voice message [[msg]] in [[language]] [[voice]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=telegram"
+          },
+          {
+            "name": "msg",
+            "type": "text",
+            "placeholder": {
+              "en": "Text"
+            }
+          },
+          {
+            "name": "language",
+            "type": "dropdown",
+            "title": {
+              "en": "Language"
+            },
+            "values": [
+              {
+                "id": "en-GB",
+                "label": {
+                  "en": "EN"
+                }
+              },
+              {
+                "id": "nl-NL",
+                "label": {
+                  "en": "NL"
+                }
+              },
+              {
+                "id": "de-DE",
+                "label": {
+                  "en": "DE"
+                }
+              },
+              {
+                "id": "it-IT",
+                "label": {
+                  "en": "IT"
+                }
+              },
+              {
+                "id": "fr-FR",
+                "label": {
+                  "en": "FR"
+                }
+              },
+              {
+                "id": "sv-SE",
+                "label": {
+                  "en": "SV"
+                }
+              },
+              {
+                "id": "nb-NO",
+                "label": {
+                  "en": "NB"
+                }
+              },
+              {
+                "id": "da-DK",
+                "label": {
+                  "en": "DA"
+                }
+              },
+              {
+                "id": "es-ES",
+                "label": {
+                  "en": "ES"
+                }
+              },
+              {
+                "id": "pl-PL",
+                "label": {
+                  "en": "PL"
+                }
+              },
+              {
+                "id": "ru-RU",
+                "label": {
+                  "en": "RU"
+                }
+              }
+            ]
+          },
+          {
+            "name": "voice",
+            "type": "dropdown",
+            "title": {
+              "en": "Voice"
+            },
+            "values": [
+              {
+                "id": "A",
+                "label": {
+                  "en": "Female"
+                }
+              },
+              {
+                "id": "B",
+                "label": {
+                  "en": "Male"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "send_voice"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "class": "other",
+      "capabilities": [
+        "last_sent"
+      ],
+      "energy": {
+        "usageConstant": 0
+      },
+      "images": {
+        "small": "/drivers/fb/assets/images/small.jpg",
+        "large": "/drivers/fb/assets/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "usernameLabel": {
+              "en": "Receiving phone number or username"
+            },
+            "usernamePlaceholder": {
+              "en": "+1 555 5555 or @myName"
+            },
+            "passwordLabel": {
+              "en": "Apikey (for Telegram only required when sending to Groups)"
+            },
+            "passwordPlaceholder": {
+              "en": "See instructions at callmebot.com"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Receiver information"
+          },
+          "children": [
+            {
+              "id": "number",
+              "type": "label",
+              "label": {
+                "en": "Number"
+              },
+              "value": "",
+              "hint": "The number of the phone to receive messages (Signal and WhatsApp), or the username (Telegram and Facebook Messenger)"
+            },
+            {
+              "id": "apikey",
+              "type": "password",
+              "label": {
+                "en": "Api key"
+              },
+              "value": "",
+              "hint": "See app settings or callmebot.com for instructions how to get an api key. Telegram only needs an api key when sending to Groups."
+            }
+          ]
+        }
+      ],
+      "name": {
+        "en": "FB Messenger"
+      },
+      "id": "fb"
+    },
+    {
+      "class": "other",
+      "capabilities": [
+        "last_sent"
+      ],
+      "energy": {
+        "usageConstant": 0
+      },
+      "images": {
+        "small": "/drivers/signal/assets/images/small.jpg",
+        "large": "/drivers/signal/assets/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "usernameLabel": {
+              "en": "Receiving phone number or username"
+            },
+            "usernamePlaceholder": {
+              "en": "+1 555 5555 or @myName"
+            },
+            "passwordLabel": {
+              "en": "Apikey (for Telegram only required when sending to Groups)"
+            },
+            "passwordPlaceholder": {
+              "en": "See instructions at callmebot.com"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Receiver information"
+          },
+          "children": [
+            {
+              "id": "number",
+              "type": "label",
+              "label": {
+                "en": "Number"
+              },
+              "value": "",
+              "hint": "The number of the phone to receive messages (Signal and WhatsApp), or the username (Telegram and Facebook Messenger)"
+            },
+            {
+              "id": "apikey",
+              "type": "password",
+              "label": {
+                "en": "Api key"
+              },
+              "value": "",
+              "hint": "See app settings or callmebot.com for instructions how to get an api key. Telegram only needs an api key when sending to Groups."
+            }
+          ]
+        }
+      ],
+      "name": {
+        "en": "Signal"
+      },
+      "id": "signal"
+    },
+    {
+      "class": "other",
+      "capabilities": [
+        "last_sent"
+      ],
+      "energy": {
+        "usageConstant": 0
+      },
+      "images": {
+        "small": "/drivers/telegram/assets/images/small.jpg",
+        "large": "/drivers/telegram/assets/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "usernameLabel": {
+              "en": "Receiving phone number or username"
+            },
+            "usernamePlaceholder": {
+              "en": "+1 555 5555 or @myName"
+            },
+            "passwordLabel": {
+              "en": "Apikey (for Telegram only required when sending to Groups)"
+            },
+            "passwordPlaceholder": {
+              "en": "See instructions at callmebot.com"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Receiver information"
+          },
+          "children": [
+            {
+              "id": "number",
+              "type": "label",
+              "label": {
+                "en": "Number"
+              },
+              "value": "",
+              "hint": "The number of the phone to receive messages (Signal and WhatsApp), or the username (Telegram and Facebook Messenger)"
+            },
+            {
+              "id": "apikey",
+              "type": "password",
+              "label": {
+                "en": "Api key"
+              },
+              "value": "",
+              "hint": "See app settings or callmebot.com for instructions how to get an api key. Telegram only needs an api key when sending to Groups."
+            }
+          ]
+        }
+      ],
+      "name": {
+        "en": "Telegram"
+      },
+      "id": "telegram"
+    },
+    {
+      "class": "other",
+      "capabilities": [
+        "last_sent"
+      ],
+      "energy": {
+        "usageConstant": 0
+      },
+      "images": {
+        "small": "/drivers/whatsapp/assets/images/small.jpg",
+        "large": "/drivers/whatsapp/assets/images/large.jpg"
+      },
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "usernameLabel": {
+              "en": "Receiving phone number or username"
+            },
+            "usernamePlaceholder": {
+              "en": "+1 555 5555 or @myName"
+            },
+            "passwordLabel": {
+              "en": "Apikey (for Telegram only required when sending to Groups)"
+            },
+            "passwordPlaceholder": {
+              "en": "See instructions at callmebot.com"
+            }
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Receiver information"
+          },
+          "children": [
+            {
+              "id": "number",
+              "type": "label",
+              "label": {
+                "en": "Number"
+              },
+              "value": "",
+              "hint": "The number of the phone to receive messages (Signal and WhatsApp), or the username (Telegram and Facebook Messenger)"
+            },
+            {
+              "id": "apikey",
+              "type": "password",
+              "label": {
+                "en": "Api key"
+              },
+              "value": "",
+              "hint": "See app settings or callmebot.com for instructions how to get an api key. Telegram only needs an api key when sending to Groups."
+            }
+          ]
+        }
+      ],
+      "name": {
+        "en": "WhatsApp"
+      },
+      "id": "whatsapp"
+    }
+  ],
+  "capabilities": {
+    "last_sent": {
+      "type": "string",
+      "title": {
+        "en": "Last sent"
+      },
+      "getable": true,
+      "setable": false,
+      "icon": "./assets/last_sent.svg"
+    }
   }
-}
 }
