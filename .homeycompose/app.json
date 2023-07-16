@@ -279,12 +279,6 @@
           "id": "login_credentials",
           "template": "login_credentials",
           "options": {
-            "usernameLabel": {
-              "en": "Receiving phone number or username"
-            },
-            "usernamePlaceholder": {
-              "en": "+1 555 5555 or @myName"
-            },
             "passwordLabel": {
               "en": "Apikey (for Telegram only required when sending to Groups)"
             },
