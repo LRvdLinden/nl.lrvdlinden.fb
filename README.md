@@ -73,12 +73,15 @@ You need to get a personal APIkey from callmebot.com before using the API. Keep 
 ---
 
 ## Changelog
-
-- 1.0.0 (x xx 2023) NEW: app release (COMING SOON)
+- 1.0.3 (16 jul 2023) App improvemend
+ 
 <details>
 <summary>More changelog</summary>
 <br><br>
 <pre>
+- 1.0.2 (16 jul 2023) Fix: Typo login_credentials
+- 1.0.1 (16 jul 2023) Update readme
+- 1.0.0 (16 jul 2023) NEW: app release
 - 0.0.1 (16 jul 2023) First release
 </pre>
 </details>
