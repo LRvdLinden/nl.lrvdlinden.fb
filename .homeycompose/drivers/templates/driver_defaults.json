@@ -40,7 +40,7 @@
       "label": {
         "en": "Receiver information"
       },
-        {
+        
           "id": "apikey",
           "type": "password",
           "label": {
@@ -51,5 +51,5 @@
         }
       ]
     }
-  ]
-}
+  
+
