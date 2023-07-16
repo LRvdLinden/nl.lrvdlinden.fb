@@ -64,11 +64,11 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/app-pro-signal-messenger/83624"
+    "url": "https://community.homey.app/t/app-pro-facebook-messenger/84702"
   },
   "homepage": "https://shor.by/LRvdLinden",
-  "support": "https://community.homey.app/t/app-pro-signal-messenger/83624",
-  "homeyCommunityTopicId": 83624,
+  "support": "https://community.homey.app/t/app-pro-facebook-messenger/84702",
+  "homeyCommunityTopicId": 84702,
   "api": {
     "getLogs": {
       "method": "GET",
