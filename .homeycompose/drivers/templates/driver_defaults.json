@@ -15,7 +15,7 @@
       "id": "login_credentials",
       "template": "login_credentials",
       "options": {
-        "passwordLabel": { "en": "ApiKeyr" },
+        "passwordLabel": { "en": "ApiKey" },
         "passwordPlaceholder": { "en": "See instructions at callmebot.com" }
       }
     },
