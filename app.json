@@ -57,16 +57,18 @@
     "donate": {
       "paypal": {
         "username": "lrvdlinden"
+      },
+      "bunq": {
+        "username": "lrvdlinden"
       }
     }
   },
   "bugs": {
-    "url": "https://github.com/gruijter/com.gruijter.callmebot/issues"
+    "url": "https://community.homey.app/t/app-pro-signal-messenger/83624"
   },
-  "source": "https://github.com/gruijter/com.gruijter.callmebot",
-  "homepage": "https://github.com/gruijter/com.gruijter.callmebot/blob/master/README.md",
-  "support": "https://community.athom.com/t/48374",
-  "homeyCommunityTopicId": 48374,
+  "homepage": "https://shor.by/LRvdLinden",
+  "support": "https://community.homey.app/t/app-pro-signal-messenger/83624",
+  "homeyCommunityTopicId": 83624,
   "api": {
     "getLogs": {
       "method": "GET",
