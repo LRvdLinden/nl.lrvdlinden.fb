@@ -25,7 +25,7 @@ You need to get a personal APIkey from callmebot.com before using the API. Keep 
 ---
 
 ## Prerequisite ⚙
-- Creat a [Signal apiKey](https://www.callmebot.com/blog/free-api-facebook-messenger/)
+- Creat a [Facebook Messenger apiKey](https://www.callmebot.com/blog/free-api-facebook-messenger/)
    - Start a Facebook Messenger conversation with @api.callmebot. [Or click here](https://m.me/api.callmebot)
    - Send "create apikey" to @api.callmebot (using Facebook Messenger of course)
    - The bot will answer you with your personal apikey.
