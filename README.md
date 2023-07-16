@@ -35,8 +35,6 @@ You need to get a personal APIkey from callmebot.com before using the API. Keep 
 
 ## Usage ⚙
 
-https://homey.app/nl-nl/app/nl.lrvdlinden.fb/facebook-messenger/
-
 - Install this app on your Homey
 - Go to add devices
 - Provide your mobile number and apiKey (from CallMeBot). Click Next
