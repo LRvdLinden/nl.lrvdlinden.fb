@@ -8,7 +8,10 @@
   "1.0.1": {
     "en": "Update readme"
   },
-    "1.0.1": {
+    "1.0.2": {
     "en": "Fix: Typo login_credentials"
+    },
+    "1.0.3": {
+    "en": "App improvemend"
     }
 }
