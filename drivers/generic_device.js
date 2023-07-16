@@ -127,7 +127,7 @@ class Device extends Homey.Device {
 			const args2 = { ...args };
 			const cloudID = await this.homey.cloud.getHomeyId();
 			// args2.imgUrl = image.cloudUrl; // this is a cloudlink of the image. Image is updated on fetch by CallMeBot
-			args2.imgUrl = `https://${cloudID}.connect.athom.com/app/com.gruijter.callmebot/userdata/${filename}`;
+			args2.imgUrl = `https://${cloudID}.connect.athom.com/app/nl.lrvdlinden.fb/userdata/${filename}`;
 			const result = await this.driver.sendImage(args2);
 			this.updateLastSent();
 			this.log(result);
