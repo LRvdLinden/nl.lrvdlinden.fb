@@ -16,7 +16,7 @@
       "template": "login_credentials",
       "options": {
         "passwordLabel": { "en": "ApiKey" },
-        "passwordPlaceholder": { "en": "See instructions at callmebot.com" }
+        "passwordPlaceholder": { "en": "You just received this from CallMeBot in Facebook Messenger" }
       }
     },
     {
