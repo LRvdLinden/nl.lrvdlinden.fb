@@ -6,7 +6,6 @@
   "name": { "en": "Facebook Messenger" },
   "platforms": ["local", "cloud"],
   "connectivity": ["cloud"],
-  "class": "other",
   "brandColor": "#3b5998",
   "description": {
     "en": "Send messages to your Facebook messenger"
