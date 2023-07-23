@@ -1,5 +1,9 @@
 {
   "class": "other",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "capabilities": [
      "last_sent"
   ],
