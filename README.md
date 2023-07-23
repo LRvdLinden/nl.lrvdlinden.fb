@@ -19,7 +19,7 @@ You need to get a personal APIkey from callmebot.com before using the API. Keep 
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/Signal/)**|:white_check_mark:|In development| **[No test version](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/Signal/test)** |
+|Homey Pro|**[no live version](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/)**|:white_check_mark:|In development| **[1.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/test/)** |
 
 
 ---
@@ -104,7 +104,7 @@ or buy me a couple of :beers: or a :coffee: on [Ko-Fi ](https://ko-fi.com/lrvdli
 ---
 | Icon | App name | Community |
 |------|:--------------:|:-------:|
-| 💬 | Facebook Messenger | [Support](https://community.homey.app/t/app-pro-facebook-messenger-coming-soon/84702) |
+| 💬 | [Facebook Messenger](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/test/) | [Support](https://community.homey.app/t/app-pro-facebook-messenger-coming-soon/84702) |
 | 💬 | [Signal](https://homey.app/nl-nl/app/nl.lrvdlinden.signal/test/) | [Support](https://community.homey.app/t/app-pro-signal-messenger/83624) |
 | 🚨 | [P2000](https://homey.app/nl-nl/app/nl.lrvdlinden.p2000/test/) | [Support](https://community.homey.app/t/app-pro-p2000/83738) |
 | 🚁 | [Lifeliner](https://homey.app/nl-nl/app/nl.lrvdlinden.lifeliner/test/) | [Support](https://community.homey.app/t/app-pro-lifeline-alerts-for-homey/83742) |
