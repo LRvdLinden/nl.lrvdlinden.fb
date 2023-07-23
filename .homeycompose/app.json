@@ -3,14 +3,9 @@
   "version": "1.0.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-
-  "platforms": [
-    "local",
-    "cloud"
-  ],
-  "name": {
-    "en": "Facebook Messenger"
-  },
+  "name": { "en": "Facebook Messenger" },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["cloud"],
   "brandColor": "#3b5998",
   "description": {
     "en": "Send messages to your Facebook messenger"
