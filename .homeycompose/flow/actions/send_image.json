@@ -1,7 +1,11 @@
 {
     "title": {
       "en": "Send image"
-    },
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
     "droptoken": "image",
     "args": [
         {
