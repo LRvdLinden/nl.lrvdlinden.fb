@@ -13,7 +13,7 @@
       {
         "type": "device",
         "name": "device",
-        "filter": "driver_id=signal|whatsapp|fb|telegram"
+        "filter": "driver_id=signal"
       },
       {
         "name": "msg",
