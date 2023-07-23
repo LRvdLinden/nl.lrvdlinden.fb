@@ -4,7 +4,11 @@
     },
     "titleFormatted": {
       "en": "Send group message [[msg]]"
-    },
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
     "args": [
       {
         "type": "device",
