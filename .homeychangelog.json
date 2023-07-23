@@ -13,5 +13,9 @@
     },
     "1.0.3": {
     "en": "App improvemend"
+  },
+  "1.0.3": {
+  "en": "First release for Homey Pro and Homey Cloud",
+  "nl": "Eerste release voor Homey Pro en Homey Cloud"
     }
 }
