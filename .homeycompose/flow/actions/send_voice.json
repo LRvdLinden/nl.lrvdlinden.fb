@@ -4,7 +4,11 @@
     },
     "titleFormatted": {
       "en": "Send voice message [[msg]] in [[language]] [[voice]]"
-    },
+      },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
     "args": [
       {
         "type": "device",
