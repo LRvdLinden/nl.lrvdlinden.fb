@@ -1,11 +1,12 @@
 {
   "id": "nl.lrvdlinden.fb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-  "name": {
-    "en": "Facebook Messenger"
-  },
+  "name": { "en": "Facebook Messenger" },
+  "platforms": [ "local", "cloud" ],
+  "connectivity": "cloud",
+  "class" {others},
   "brandColor": "#3b5998",
   "description": {
     "en": "Send messages to your Facebook messenger"
