@@ -5,7 +5,7 @@
   "sdk": 3,
   "name": { "en": "Facebook Messenger" },
   "platforms": ["local", "cloud"],
-  "connectivity": "cloud",
+  "connectivity": ["cloud"],
   "class": "other",
   "brandColor": "#3b5998",
   "description": {
