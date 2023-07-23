@@ -4,7 +4,7 @@
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": { "en": "Facebook Messenger" },
-  "platforms": [ "local", "cloud" ],
+  "platforms": ["local", "cloud"],
   "connectivity": "cloud",
   "class": "other",
   "brandColor": "#3b5998",
