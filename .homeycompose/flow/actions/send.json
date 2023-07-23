@@ -18,6 +18,7 @@
       {
         "name": "msg",
         "type": "text",
+        "title": "message",
         "placeholder": {
           "en": "Text"
         }
