@@ -19,7 +19,7 @@ You need to get a personal APIkey from callmebot.com before using the API. Keep 
 
 |Branch|Live Version|Status|Note| Test Version |
 | --- | --- | --- | --- | --- |
-|Homey Pro|**[1.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/)**|:white_check_mark:|In development| **[no test version](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/test/)** |
+|Homey Pro|**[1.0.3](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/)**|:white_check_mark:|Stable| **[no test version](https://homey.app/nl-nl/app/nl.lrvdlinden.fb/Facebook-Messenger/test/)** |
 
 
 ---
