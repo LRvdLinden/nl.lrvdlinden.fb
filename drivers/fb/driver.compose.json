@@ -2,8 +2,5 @@
   "name": {
     "en": "FB Messenger"
   },
-  "platforms": ["local", "cloud"],
-  "connectivity": ["cloud"],
-  "class": "other",  
   "$extends": ["driver_defaults"]
 }
